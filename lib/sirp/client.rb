@@ -21,7 +21,7 @@ module SIRP
     #
     # @return [String] the value of 'A' in hex
     def start_authentication
-      @a ||= SecureRandom.hex(1024 / 8).to_i(16) % n
+      @a ||= SecureRandom.hex(1024 / 8).to_i(16) % @N
       @A = num_to_hex(calc_A(@a, @N, @g))
     end
 

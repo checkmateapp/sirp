@@ -58,7 +58,7 @@ module SIRP
         BBE11757 7A615D6C 770988C0 BAD946E2 08E24FA0 74E5AB31 43DB5BFC
         E0FD108E 4B82D120 A93AD2CA FFFFFFFF FFFFFFFF
       ).join.hex
-      @g = 5
+      @g = 2
       @hash = Digest::SHA256
 
     when 4096
